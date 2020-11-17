@@ -1,0 +1,11 @@
+Galera toda!
+
+<span *ngIf="usuarios.length === 0">Carregando!</span>
+
+<ul>
+  <li *ngFor="let usuario of usuarios">
+    Nome: {{usuario.name}}
+    <br>
+    Cidade: {{usuario.address.city}}
+  </li>
+</ul>

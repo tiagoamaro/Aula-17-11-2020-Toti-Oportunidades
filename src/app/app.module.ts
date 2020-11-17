@@ -8,6 +8,8 @@ import { SobreComponent } from './sobre/sobre.component';
 import { FaqComponent } from './sobre/faq/faq.component';
 import { HistoriaComponent } from './sobre/historia/historia.component';
 import { FaleConoscoComponent } from './sobre/fale-conosco/fale-conosco.component';
+import { EquipeComponent } from './sobre/equipe/equipe.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { FaleConoscoComponent } from './sobre/fale-conosco/fale-conosco.componen
     SobreComponent,
     FaqComponent,
     HistoriaComponent,
-    FaleConoscoComponent
+    FaleConoscoComponent,
+    EquipeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
